@@ -11,7 +11,7 @@ export class PersonRouter {
 
     public get(req: Request, res: Response, next: NextFunction) {
         let persons = [];
-        for (var index = 0; index < 100000; index++) {
+        for (var index = 0; index < 100; index++) {
             let person = new Person();
             person.id = Guid.newGuid();
             person.nome = "Fábio Barbosa - " + index;
